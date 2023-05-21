@@ -1,1 +1,4 @@
 *.docx
+*.zip*
+.DS_Store
+*.o

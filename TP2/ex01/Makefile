@@ -12,11 +12,11 @@ else
 endif
 
 # Project tests
-TEST1 = 44
-TEST2 = 10
+TEST1 = ""
+TEST2 =
 PROJECT_TESTS = $(TEST1) $(TEST2)
 
-TARGET = convert
+TARGET = exec
 CC = c++
 CPPFLAGS = -Wall -Werror -Wextra -std=c++11 -I.
 LDFLAGS =

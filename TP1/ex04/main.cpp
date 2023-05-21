@@ -9,12 +9,14 @@ using std::setw;
 using std::setprecision;
 using std::fixed;
 
+// Définition des constantes du programme selon l'énoncé
 #define NB_EMPLOYEES 50
 #define HOURLY_RATE 17
 #define SMOKING_TIME 5
 #define WORK_DAY_PER_WEEK 5
 #define WORK_WEEK_PER_MONTH 4
 
+// Definition d'une structure pour les statistiques
 struct stats {
   float coutJournalier;
   float coutHebdomadaire;
@@ -26,6 +28,9 @@ struct stats {
   float heuresPerduAnnuel;
 };
 
+/*
+** Cette fonction affiche les statistiques passées en paramètre.
+*/
 static void displayStats(const struct stats& stats){
   cout << std::setfill('-') << setw(56) << "" << endl;
   cout << "| Periode  | Temps perdu (heures) | Cout correspondant |" << endl;
